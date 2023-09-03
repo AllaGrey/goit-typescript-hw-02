@@ -15,5 +15,5 @@ enum DayOfWeek {
 }
 
 const isWeekend = (day: DayOfWeek): boolean => {
-  return day.includes('Sun' || 'Sut') ? true : false
+  return day === DayOfWeek.SUN || day === DayOfWeek.SUT
 }
